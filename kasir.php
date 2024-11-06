@@ -15,6 +15,7 @@ session_regenerate_id();
 <body>
     <?php require_once "inc/navbar.php" ?>
     <div class="container text-center">
+        <div class="tes"></div>
         <!-- <div class="row">
             <div class="col-3 mt-3">
                 <img src="img/download.jpeg" alt="gambar1" width="150">
