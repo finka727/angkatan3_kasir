@@ -11,6 +11,7 @@ if (isset($_POST['login'])) {
         $row = mysqli_fetch_assoc($selectLogin);
 
         if ($row['email'] == $email && $row['password'] == $password) {
+            $_SESSION['ID'] = $row['id'];
             $_SESSION['emailnya'] = $row['email'];
             $_SESSION['namalengkap'] = $row['nama_lengkap'];
             header("Location: kasir.php");
